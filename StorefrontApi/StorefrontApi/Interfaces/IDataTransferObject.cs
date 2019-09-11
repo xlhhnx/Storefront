@@ -4,7 +4,7 @@
     {
     }
 
-    interface IDataTransfferObject<T> : IDataTransferObject
+    interface IDataTransferObject<T> : IDataTransferObject
     {
         T ToLogicalObject();
     }

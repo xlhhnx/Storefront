@@ -1,9 +1,10 @@
 ﻿using StorefrontApi.Interfaces;
 using StorefrontApi.LogicalModels;
+using System;
 
 namespace StorefrontApi.DataTransfer
 {
-    public class UserDTO : IDataTransferObject<User>
+    public class DeveloperDTO : IDataTransferObject<Developer>
     {
         public string Id { get; set; }
         public string UserName { get; set; }
@@ -12,9 +13,9 @@ namespace StorefrontApi.DataTransfer
         public string Email { get; set; }
         public bool Active { get; set; }
 
-        public User ToLogicalObject()
+        public Developer ToLogicalObject()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

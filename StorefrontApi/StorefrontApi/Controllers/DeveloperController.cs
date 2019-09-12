@@ -4,19 +4,20 @@ using StorefrontApi.DataTransfer;
 
 namespace StorefrontApi.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
     public class DeveloperController : Controller
     {
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> SearchDevelopers(DeveloperSearchParameters searchParameters)
+        public async Task<IActionResult> SearchDevelopers([FromQuery] string searchTerm, [FromQuery] string userNameSearchTerm, [FromQuery] string emailSearchTerm, [FromQuery] string displayNameSearchTerm)
         {
             return Ok();
         }
 
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> GetDeveloper(string developerId)
+        public async Task<IActionResult> GetDeveloper([FromQuery] string developerId)
         {
             return Ok();
         }

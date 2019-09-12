@@ -10,6 +10,7 @@ namespace StorefrontApi.LogicalModels
         public Guid Id { get; }
         public UserName UserName { get; }
         public string PasswordHash { get; }
+        public string PasswordSalt { get; }
         public DisplayName DisplayName { get; }
         public Email Email { get; }
         public bool Active { get; }

@@ -3,7 +3,7 @@ using StorefrontApi.LogicalModels;
 
 namespace StorefrontApi.DataTransfer
 {
-    public class UserDTO : IDataTransfferObject<User>
+    public class UserDTO : IDataTransferObject<User>
     {
         public string Id { get; set; }
         public string UserName { get; set; }

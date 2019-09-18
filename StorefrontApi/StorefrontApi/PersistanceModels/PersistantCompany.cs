@@ -9,7 +9,7 @@ namespace StorefrontApi.PersistanceModels
     {
         public Guid Id { get; }
         public string Name { get; }
-        public IEnumerable<Developer> Administractors { get; }
+        public IEnumerable<Developer> Administrators { get; }
 
         public Company ToLogicalObject()
         {

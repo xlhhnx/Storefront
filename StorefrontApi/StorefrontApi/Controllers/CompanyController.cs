@@ -17,19 +17,19 @@ namespace StorefrontApi.Controllers
 
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> GetCompany([FromQuery] string comapnyId)
+        public async Task<IActionResult> GetCompany([FromQuery] string companyId)
         {
             return Ok();
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> CreateCompany(CompanyDTO company)
         {
             return Ok();
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("[action]")]
         public async Task<IActionResult> UpdateCompany(CompanyDTO company)
         {

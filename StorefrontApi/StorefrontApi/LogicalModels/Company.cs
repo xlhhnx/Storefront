@@ -10,7 +10,7 @@ namespace StorefrontApi.LogicalModels
     {
         public Guid Id { get; }
         public CompanyName Name { get;}
-        public IEnumerable<Developer> Administractors { get; }
+        public IEnumerable<Developer> Administrators { get; }
 
         public CompanyDTO ToDTO()
         {

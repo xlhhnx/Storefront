@@ -9,7 +9,7 @@ namespace StorefrontApi.DataTransfer
     {
         public string Id { get; }
         public string Name { get; }
-        public IEnumerable<DeveloperDTO> Administractors { get; }
+        public IEnumerable<DeveloperDTO> Administrators { get; }
 
         public Company ToLogicalObject()
         {

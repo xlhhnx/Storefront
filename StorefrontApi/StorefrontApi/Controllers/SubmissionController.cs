@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StorefrontApi.DataTransfer;
+using StorefrontApi.LogicalModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

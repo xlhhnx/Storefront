@@ -22,21 +22,21 @@ namespace StorefrontApi.Controllers
             return Ok();
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> CreateDeveloper(DeveloperDTO developer)
         {
             return Ok();
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("[action]")]
         public async Task<IActionResult> UpdateDeveloper(DeveloperDTO developer)
         {
             return Ok();
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("[action]")]
         public async Task<IActionResult> DeactivateDeveloper(string developerId)
         {

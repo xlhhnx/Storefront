@@ -2,9 +2,11 @@
 using StorefrontApi.Interfaces;
 using StorefrontApi.PersistanceModels;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StorefrontApi.LogicalModels
 {
+    [NotMapped]
     public class Developer : IReturnable<DeveloperDTO>, IPersistable<PersistantDeveloper>
     {
         public Guid Id { get; }

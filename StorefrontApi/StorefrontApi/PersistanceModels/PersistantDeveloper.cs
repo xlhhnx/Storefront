@@ -1,11 +1,15 @@
 ﻿using StorefrontApi.Interfaces;
 using StorefrontApi.LogicalModels;
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StorefrontApi.PersistanceModels
 {
+    [Table("Developer")]
     public class PersistantDeveloper : IPersistant<Developer>
     {
+        [Key]
         public Guid Id { get; set; }
         public string UserName { get; set; }
         public string PasswordHash { get; set; }
